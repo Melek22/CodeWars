@@ -1,0 +1,148 @@
+:root {
+  --primary-color: #8c1c13; /* A deep red, common in orthodox contexts */
+  --secondary-color: #e5d9c5; /* A parchment-like beige */
+  --text-color: #333333;
+  --bg-color: #fcfbf9;
+  --header-bg: #2b2b2b;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header and Navigation */
+.site-header {
+  background-color: var(--header-bg);
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.site-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.site-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.site-header nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+/* Main Content Area */
+main {
+  flex: 1;
+}
+
+.page-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Home Page */
+.hero {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Romanian_Orthodox_Church_icon.svg/1024px-Romanian_Orthodox_Church_icon.svg.png');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+.widgets-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+}
+
+.widget-container {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.widget-placeholder {
+  border: 2px dashed #ccc;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  background-color: #fafafa;
+}
+
+.welcome-message {
+  max-width: 800px;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Contact Page */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  background: white;
+  padding: 1.5rem;
+  border-left: 5px solid var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--header-bg);
+  color: #aaaaaa;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
